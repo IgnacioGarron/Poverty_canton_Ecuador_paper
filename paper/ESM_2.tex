@@ -1,0 +1,79 @@
+% Standalone Online Resource 2. Compile with pdfLaTeX twice.
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,microtype}
+\usepackage[a4paper,textwidth=174mm,textheight=234mm,centering]{geometry}
+\usepackage{amsmath,amssymb,graphicx,booktabs,array,caption}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdfauthor={},pdftitle={Online Resource 2: Technical validation and tuning},pdfsubject={Social Indicators Research}}
+\renewcommand{\thetable}{S\arabic{table}}
+\captionsetup{font=small,labelfont=bf,labelsep=space}
+\raggedbottom
+\begin{document}
+\begin{center}
+{\large\bfseries Online Resource 2: Technical validation and tuning\par}
+\medskip
+{\bfseries New Data for Old Deprivations: Can Mobile Phone Mobility Data Help Map Poverty in Ecuador?\par}
+\smallskip
+\textit{Social Indicators Research}
+\end{center}
+\section{In-Sample Fit and Spatial Out-of-Sample Performance}
+\label{app:generalization_gap}
+
+Table~\ref{tab:xgboost_generalization_gap} compares in-sample fit with spatial out-of-sample performance.
+
+\begin{table}[!htbp]
+    \centering
+    
+        \caption{In-sample fit and spatial OOS performance: XGBoost under the administrative baseline}
+        \label{tab:xgboost_generalization_gap}
+        \small
+        \begin{tabular}{lrrrr}
+            \toprule
+            \textbf{Covariate design} & \textbf{\shortstack{In-sample\\RMSE}} & \textbf{\shortstack{Spatial OOS\\RMSE}} & \textbf{Difference} & \textbf{OOS/in-sample} \\
+            \midrule
+            Full            & 2.82 & 9.56  & 6.74 & 3.39 \\
+            PCR             & 8.81 & 14.96 & 6.15 & 1.70 \\
+            PLS             & 2.78 & 11.37 & 8.60 & 4.10 \\
+            LASSO           & 2.16 & 9.37  & 7.21 & 4.33 \\
+            PCR after LASSO & 7.66 & 12.38 & 4.72 & 1.62 \\
+            \bottomrule
+        \end{tabular}
+        \par\smallskip\begin{minipage}{\textwidth}
+            \footnotesize
+            \textit{Notes:} RMSEs and differences are expressed in percentage points of UBN poverty. In-sample RMSE is a fit diagnostic only. Spatial OOS RMSE uses one held-out prediction per canton from nested spatial cross-validation. The difference is spatial OOS RMSE minus in-sample RMSE; the ratio is spatial OOS RMSE divided by in-sample RMSE. The table reports the five covariate designs used with the squared-error XGBoost model in the administrative baseline scenario.
+        \end{minipage}
+    
+\end{table}
+
+
+
+\section{Hyperparameter Tuning Strategies}
+\label{app:hyper}
+
+Table~\ref{tab:hyperparameter} summarizes the tuning strategies.
+
+All models were implemented in R using the \texttt{tidymodels} framework. The main supporting packages were \texttt{glmnet} for LASSO, \texttt{xgboost} for gradient boosting, \texttt{mixOmics} for PLS, and \texttt{spatialsample} and \texttt{sf} for spatial cross-validation. Bayesian hyperparameter optimization and performance evaluation were conducted using \texttt{tune} and \texttt{yardstick}, respectively. All scale-dependent transformations were implemented within the resampling pipeline. In each training partition, numeric predictors are centered by their training-sample means and scaled by their training-sample standard deviations, and these parameters are applied unchanged to the corresponding assessment partition. PCA, PLS, and LASSO are fitted after this standardization step, and the number of components for PCA and PLS and the LASSO penalty are selected through inner-loop tuning. Preprocessing, component extraction, and variable selection are therefore re-estimated within each training sample, preventing information from the assessment observations from entering the fitted transformations. The exception is the calendar exercise in the main manuscript, whose predictor set was selected using the full sample.
+
+\begin{table}[!htbp]
+    \centering
+    \resizebox{\textwidth}{!}{
+    \begin{tabular}{lp{10cm}}
+        \toprule
+        \textbf{ML algorithm} & \textbf{Description} \\
+        \midrule
+        Linear designs
+        & Bayesian optimization on the inner spatial folds. The tuning objective is RMSE; the tuned parameters govern variable selection or the number of retained factors.\\
+        XGBoost
+        & Bayesian optimization on the inner spatial folds, minimizing RMSE. \\
+        XGBoost (median)
+        & Bayesian optimization on the inner spatial folds, minimizing median pinball loss.\\
+        \bottomrule
+    \end{tabular}
+    }
+    \caption{Hyperparameter tuning under nested spatial cross-validation}
+    \label{tab:hyperparameter}
+\end{table}
+
+\end{document}

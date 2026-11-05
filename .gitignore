@@ -1,0 +1,59 @@
+# Confidential/local inputs and generated analytical results.
+/input/**
+!/input/README.md
+/output_tidymodels/**
+!/output_tidymodels/README.md
+/new code/input/
+
+# Data and fitted objects must not be added in other locations accidentally.
+*.csv
+*.xlsx
+*.xls
+*.dta
+*.sav
+*.rds
+*.RDS
+*.RData
+*.rda
+*.parquet
+*.feather
+*.gpkg
+*.shp
+*.shx
+*.dbf
+*.prj
+*.gdb/
+*.zip
+*.tar.gz
+
+# R sessions, local libraries, credentials, and OS/editor files.
+.Rhistory
+.RDataTmp
+.Ruserdata
+.Rproj.user/
+.Renviron
+.env
+.env.*
+.DS_Store
+._*
+.vscode/
+.idea/
+renv/library/
+renv/staging/
+
+# LaTeX build products; keep the source figure PDFs tracked.
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+/paper/Doc100426.pdf
+/paper/ESM_1.pdf
+/paper/ESM_2.pdf
+/paper/Online_Appendix.pdf
