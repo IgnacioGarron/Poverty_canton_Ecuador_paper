@@ -1,7 +1,6 @@
 # Confidential/local inputs and generated analytical results.
 /input/**
 !/input/README.md
-/output_tidymodels/**
 !/output_tidymodels/README.md
 /new code/input/
 
