@@ -1,0 +1,15 @@
+scenario,model,design,rmse_in_sample,rmse_nested_spatial_oof,absolute_gap,ratio_oof_to_in_sample,note
+baseline_mobile_mean,linear,lasso,0.07853779817054042,0.10791856655182532,0.029380768381284894,1.3740971744265889,In-sample es diagnóstico; nested spatial OOF es la estimación de validación.
+baseline_mobile_mean,linear,pcr,0.12131709815468329,0.15495521581564886,0.03363811766096557,1.2772743345548527,In-sample es diagnóstico; nested spatial OOF es la estimación de validación.
+baseline_mobile_mean,linear,pcr_lasso,0.09020667982270561,0.117127008257844,0.02692032843513839,1.2984294343617153,In-sample es diagnóstico; nested spatial OOF es la estimación de validación.
+baseline_mobile_mean,linear,pls,0.055654332918162776,0.14038234083199408,0.08472800791383131,2.522397331370768,In-sample es diagnóstico; nested spatial OOF es la estimación de validación.
+baseline_mobile_mean,xgboost,full,0.02807835632695228,0.09541148582746713,0.06733312950051484,3.398043842612044,In-sample es diagnóstico; nested spatial OOF es la estimación de validación.
+baseline_mobile_mean,xgboost,lasso,0.02162565519522259,0.09694520947794581,0.07531955428272322,4.482879644699152,In-sample es diagnóstico; nested spatial OOF es la estimación de validación.
+baseline_mobile_mean,xgboost,pcr,0.059858646393210764,0.14863029055708782,0.08877164416387706,2.4830212427580993,In-sample es diagnóstico; nested spatial OOF es la estimación de validación.
+baseline_mobile_mean,xgboost,pcr_lasso,0.09199023308551389,0.1145590052985651,0.022568772213051203,1.2453387871304917,In-sample es diagnóstico; nested spatial OOF es la estimación de validación.
+baseline_mobile_mean,xgboost,pls,0.006601839727955628,0.12308188215141609,0.11648004242346047,18.643573189185933,In-sample es diagnóstico; nested spatial OOF es la estimación de validación.
+baseline_mobile_mean,xgboost_quantile,full,0.04220547527934457,0.10531489000761254,0.06310941472826798,2.4952897535347467,In-sample es diagnóstico; nested spatial OOF es la estimación de validación.
+baseline_mobile_mean,xgboost_quantile,lasso,0.04369126476815256,0.10372366716848685,0.06003240240033429,2.3740138382099003,In-sample es diagnóstico; nested spatial OOF es la estimación de validación.
+baseline_mobile_mean,xgboost_quantile,pcr,0.10300271553141034,0.15015636171582328,0.04715364618441294,1.4577903207807525,In-sample es diagnóstico; nested spatial OOF es la estimación de validación.
+baseline_mobile_mean,xgboost_quantile,pcr_lasso,0.019684778230542505,0.11809729998218024,0.09841252175163774,5.9994224267633784,In-sample es diagnóstico; nested spatial OOF es la estimación de validación.
+baseline_mobile_mean,xgboost_quantile,pls,0.04136948641703606,0.12132019730319295,0.07995071088615688,2.9326010016221273,In-sample es diagnóstico; nested spatial OOF es la estimación de validación.

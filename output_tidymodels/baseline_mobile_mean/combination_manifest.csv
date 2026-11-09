@@ -1,0 +1,16 @@
+model,design,status,reason
+linear,full,not_estimable,OLS full no tiene hiperparámetros para tune_bayes y p >> n; no formaba parte del modelo lineal original.
+linear,lasso,completed,NA
+linear,pcr,completed,NA
+linear,pcr_lasso,completed,NA
+linear,pls,completed,NA
+xgboost,full,completed,NA
+xgboost,lasso,completed,NA
+xgboost,pcr,completed,NA
+xgboost,pcr_lasso,completed,NA
+xgboost,pls,completed,NA
+xgboost_quantile,full,completed,NA
+xgboost_quantile,lasso,completed,NA
+xgboost_quantile,pcr,completed,NA
+xgboost_quantile,pcr_lasso,completed,NA
+xgboost_quantile,pls,completed,NA

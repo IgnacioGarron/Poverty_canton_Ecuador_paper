@@ -5,9 +5,6 @@
 /new code/input/
 
 # Data and fitted objects must not be added in other locations accidentally.
-*.csv
-*.xlsx
-*.xls
 *.dta
 *.sav
 *.rds

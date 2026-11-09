@@ -1,0 +1,2 @@
+repetition,seed,scenario,model,design,evaluation,n,rmse,rmse_pp,nrmse_sd,mae,mae_pp,r_squared,mean_signed_error,mean_signed_error_pp
+1,123,baseline,xgboost,full,repeated_nested_spatial_oof,218,0.09460732036512837,9.460732036512837,0.5133880061670633,0.07692778601880633,7.692778601880633,0.742101664215268,0.0018597971080106213,0.18597971080106213

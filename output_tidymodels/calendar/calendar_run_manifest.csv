@@ -1,0 +1,7 @@
+comparison,quarter,pca_factor,administrative_variables,mobile_raw_variables,model_predictors_after_recipe
+without_pca,Q1,FALSE,5,0,5
+with_pca,Q1,TRUE,5,38,6
+without_pca,Q2,FALSE,14,0,14
+with_pca,Q2,TRUE,14,38,15
+without_pca,Q4,FALSE,20,0,20
+with_pca,Q4,TRUE,20,38,21

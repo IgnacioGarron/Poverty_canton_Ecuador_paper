@@ -1,0 +1,2 @@
+scenario,model,design,rmse_in_sample,rmse_nested_spatial_oof,absolute_gap,ratio_oof_to_in_sample,note
+baseline_mobile_pca_mean,xgboost,pcr_lasso,0.058405605041198336,0.10839694144581731,0.049991336404618975,1.8559338845878905,In-sample es diagnóstico; nested spatial OOF es la estimación de validación.

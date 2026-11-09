@@ -1,0 +1,2 @@
+fold,mtry,trees,min_n,tree_depth,learn_rate,loss_reduction,sample_size,xgb_alpha,xgb_lambda,num_comp,.config
+Fold4,0.8369372720133514,1161,15,9,0.10788198235761384,1.7880962943904517e-6,0.991649323221622,0.0017108979527531091,2.1058088570196292e-06,10,iter02

@@ -1,0 +1,21 @@
+scenario,model,design,rank,variable_original,variable,model_feature,mean_abs_shap,mean_abs_shap_pp,mean_shap,mean_shap_pp,n_cantons,max_additivity_error
+mobile_only_mean,xgboost,full,1,weekend_night.y,Weekend Night Mobility (National),weekend_night.y,0.0164886759914492,1.6488675991449198,6.624556877094944e-4,0.06624556877094945,218,4.5148772187530994e-7
+mobile_only_mean,xgboost,full,2,weekday_night.y,Weekday Night Mobility (National),weekday_night.y,0.014222843843777108,1.4222843843777109,-9.302446819465915e-4,-0.09302446819465915,218,4.5148772187530994e-7
+mobile_only_mean,xgboost,full,3,weekend_night.x,Weekend Night Mobility (Internal),weekend_night.x,0.008125849293519255,0.8125849293519255,-2.2862139350196363e-4,-0.02286213935019636,218,4.5148772187530994e-7
+mobile_only_mean,xgboost,full,4,thursday.y,Thursday Mobility (National),thursday.y,0.0072681455394475285,0.7268145539447528,-8.936096709050717e-4,-0.08936096709050717,218,4.5148772187530994e-7
+mobile_only_mean,xgboost,full,5,monday.y,Monday Mobility (National),monday.y,0.005750594193910445,0.5750594193910445,-4.6631579240356835e-4,-0.04663157924035684,218,4.5148772187530994e-7
+mobile_only_mean,xgboost,full,6,friday.y,Friday Mobility (National),friday.y,0.004551840047330656,0.4551840047330656,-3.090162746556992e-5,-0.003090162746556992,218,4.5148772187530994e-7
+mobile_only_mean,xgboost,full,7,tuesday.y,Tuesday Mobility (National),tuesday.y,0.003862560604946739,0.3862560604946739,-5.675928064818503e-4,-0.05675928064818503,218,4.5148772187530994e-7
+mobile_only_mean,xgboost,full,8,sunday.y,Sunday Mobility (National),sunday.y,0.0034131450430915154,0.34131450430915156,3.610734688705517e-4,0.03610734688705517,218,4.5148772187530994e-7
+mobile_only_mean,xgboost,full,9,weekday_all.x,Weekday Mobility (Internal),weekday_all.x,0.0033523967973417986,0.33523967973417984,1.911382744122946e-5,0.001911382744122946,218,4.5148772187530994e-7
+mobile_only_mean,xgboost,full,10,weekday_night.x,Weekday Night Mobility (Internal),weekday_night.x,0.0031795106520352955,0.31795106520352956,2.7891121649315767e-4,0.027891121649315766,218,4.5148772187530994e-7
+mobile_only_mean,xgboost,full,11,weekend_morning.x,Weekend Morning Mobility (Internal),weekend_morning.x,0.0031453890040695214,0.31453890040695215,2.3365685000156967e-4,0.02336568500015697,218,4.5148772187530994e-7
+mobile_only_mean,xgboost,full,12,wednesday.y,Wednesday Mobility (National),wednesday.y,0.0030686964777270503,0.30686964777270503,-4.5437830910962415e-4,-0.045437830910962415,218,4.5148772187530994e-7
+mobile_only_mean,xgboost,full,13,weekday_evening.x,Weekday Evening Mobility (Internal),weekday_evening.x,0.0019989225198648263,0.19989225198648264,6.862917683090493e-4,0.06862917683090493,218,4.5148772187530994e-7
+mobile_only_mean,xgboost,full,14,weekday_morning.x,Weekday Morning Mobility (Internal),weekday_morning.x,0.0019590369094090554,0.19590369094090554,3.3461283027288427e-4,0.03346128302728843,218,4.5148772187530994e-7
+mobile_only_mean,xgboost,full,15,weekend_afternoon.y,Weekend Afternoon Mobility (National),weekend_afternoon.y,0.0016044774040667375,0.16044774040667376,3.988385250430913e-4,0.03988385250430913,218,4.5148772187530994e-7
+mobile_only_mean,xgboost,full,16,sunday.x,Sunday Mobility (Internal),sunday.x,0.001271089980028433,0.1271089980028433,2.0716541741521807e-4,0.020716541741521807,218,4.5148772187530994e-7
+mobile_only_mean,xgboost,full,17,thursday.x,Thursday Mobility (Internal),thursday.x,8.933576396100412e-4,0.08933576396100412,8.880964615446336e-5,0.008880964615446336,218,4.5148772187530994e-7
+mobile_only_mean,xgboost,full,18,weekday_afternoon.y,Weekday Afternoon Mobility (National),weekday_afternoon.y,8.054450768422028e-4,0.08054450768422028,6.576359150247699e-5,0.006576359150247699,218,4.5148772187530994e-7
+mobile_only_mean,xgboost,full,19,weekend_evening.x,Weekend Evening Mobility (Internal),weekend_evening.x,7.956889330003882e-4,0.07956889330003883,2.5334670639611834e-6,2.5334670639611835e-4,218,4.5148772187530994e-7
+mobile_only_mean,xgboost,full,20,wednesday.x,Wednesday Mobility (Internal),wednesday.x,7.194546844002282e-4,0.07194546844002282,-4.093136665504212e-5,-0.004093136665504212,218,4.5148772187530994e-7

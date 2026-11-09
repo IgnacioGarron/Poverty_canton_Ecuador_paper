@@ -1,0 +1,15 @@
+scenario,model,design,rmse_in_sample,rmse_nested_spatial_oof,absolute_gap,ratio_oof_to_in_sample,note
+baseline,linear,lasso,0.07853156179442039,0.10791131311899205,0.029379751324571657,1.3741139314341138,In-sample es diagnóstico; nested spatial OOF es la estimación de validación.
+baseline,linear,pcr,0.1221688875317382,0.1508506223522368,0.028681734820498614,1.2347711876564924,In-sample es diagnóstico; nested spatial OOF es la estimación de validación.
+baseline,linear,pcr_lasso,0.09044777448593151,0.1151362751048873,0.02468850061895579,1.2729586300964864,In-sample es diagnóstico; nested spatial OOF es la estimación de validación.
+baseline,linear,pls,0.053360334086959615,0.1309922626600822,0.0776319285731226,2.4548621162417827,In-sample es diagnóstico; nested spatial OOF es la estimación de validación.
+baseline,xgboost,full,0.02818921431608232,0.09561126357806346,0.06742204926198114,3.391767592597143,In-sample es diagnóstico; nested spatial OOF es la estimación de validación.
+baseline,xgboost,lasso,0.02163654125279651,0.09369906509454025,0.07206252384174373,4.330593508443948,In-sample es diagnóstico; nested spatial OOF es la estimación de validación.
+baseline,xgboost,pcr,0.08811440118301325,0.14964894763391354,0.061534546450900285,1.698348347429534,In-sample es diagnóstico; nested spatial OOF es la estimación de validación.
+baseline,xgboost,pcr_lasso,0.07659474024532768,0.12380290329158147,0.04720816304625379,1.6163368776374107,In-sample es diagnóstico; nested spatial OOF es la estimación de validación.
+baseline,xgboost,pls,0.027756011711273215,0.11372336885841904,0.08596735714714582,4.097251796886576,In-sample es diagnóstico; nested spatial OOF es la estimación de validación.
+baseline,xgboost_quantile,full,0.024084248377837996,0.10156661244063464,0.07748236406279664,4.2171385565885,In-sample es diagnóstico; nested spatial OOF es la estimación de validación.
+baseline,xgboost_quantile,lasso,0.042503764438316875,0.10205750218032289,0.059553737742006015,2.4011403114289496,In-sample es diagnóstico; nested spatial OOF es la estimación de validación.
+baseline,xgboost_quantile,pcr,0.09106075761920625,0.15158178711504489,0.06052102949583864,1.6646225122453158,In-sample es diagnóstico; nested spatial OOF es la estimación de validación.
+baseline,xgboost_quantile,pcr_lasso,0.022186319523321094,0.11760302699868577,0.09541670747536468,5.300700139789641,In-sample es diagnóstico; nested spatial OOF es la estimación de validación.
+baseline,xgboost_quantile,pls,0.028171141476123478,0.11161518996607867,0.08344404848995518,3.962040021015066,In-sample es diagnóstico; nested spatial OOF es la estimación de validación.

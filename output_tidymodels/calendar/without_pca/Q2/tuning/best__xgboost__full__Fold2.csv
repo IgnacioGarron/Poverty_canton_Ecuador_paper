@@ -1,0 +1,2 @@
+fold,mtry,trees,min_n,tree_depth,learn_rate,loss_reduction,sample_size,xgb_alpha,xgb_lambda,.config
+Fold2,1,985,16,5,0.011787686347935873,0.01,0.5,1e-5,1e-5,pre0_mod15_post0

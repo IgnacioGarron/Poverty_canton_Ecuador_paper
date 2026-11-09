@@ -1,0 +1,2 @@
+scenario,model,design,rmse_in_sample,rmse_nested_spatial_oof,absolute_gap,ratio_oof_to_in_sample,note
+baseline,xgboost_quantile,full,0.024084248377837996,0.10156661244063464,0.07748236406279664,4.2171385565885,In-sample es diagnóstico; nested spatial OOF es la estimación de validación.
